@@ -1,0 +1,195 @@
+---
+alwaysApply: true
+---
+
+---
+
+# 📘 Android Rulebook for Cursor App (Final with Designer XML Integration)
+
+This rulebook defines both **Directory Rules** (project structure) and **Code Generation Rules** (implementation standards). Together, they ensure a clean, scalable, and maintainable Android codebase that adheres to **Clean Architecture**, **MVI**, and company-specific standards.
+
+---
+
+## 🗂 Directory Rules (Project Structure)
+
+### General Project Structure
+- The project must be modular.  
+- The `app` module contains all application content, layered by function.  
+- **MainActivity.kt** must reside in `com.example.drivehub_android/user_interface`.  
+
+### Directory Layout
+```
+app/
+├── src
+    ├── main
+        ├── java/com/example/drivehub_android/
+            ├── data/
+                ├── dto/request
+                ├── dto/response
+                ├── fixed
+                ├── model
+                ├── remote
+            ├── dependency_injection/
+            ├── domain/
+                ├── Registration/
+                    ├── RegistrationModel.kt
+                    ├── RegistrationUseCase.kt
+                ├── Login/
+                    ├── LoginModel.kt
+                    ├── LoginUseCase.kt
+                ├── Dashboard/
+                    ├── DashboardModel.kt
+                    ├── DashboardUseCase.kt
+            ├── navigation/
+                ├── NavGraph.kt
+                ├── NavigationProvider.kt
+                ├── Screen.kt   ← moved outside, no `screen/` folder
+            ├── repository/
+            ├── theme/
+                ├── Color.kt
+                ├── Typography.kt
+                ├── Shape.kt
+            ├── user_interface/
+                ├── Registration/
+                    ├── RegistrationScreen.kt
+                    ├── RegistrationViewModel.kt
+                ├── Login/
+                    ├── LoginScreen.kt
+                    ├── LoginViewModel.kt
+                ├── Dashboard/
+                    ├── DashboardScreen.kt
+                    ├── DashboardViewModel.kt
+                ├── common/
+            ├── utility/
+                ├── extension/
+                ├── function/
+                ├── network/
+                ├── storage/
+        ├── res/
+            ├── drawable/
+            ├── drawable-hdpi/
+            ├── drawable-mdpi/
+            ├── drawable-xhdpi/
+            ├── drawable-xxhdpi/
+            ├── drawable-xxxhdpi/
+            ├── font/
+            ├── raw/
+            ├── values/
+                ├── colors.xml   ← designer-provided XML file (source of truth)
+            ├── xml/
+        ├── AndroidManifest.xml
+```
+
+### Resource Rules
+- **Images**:  
+  - >201 KB → `.svg` in `drawable/`.  
+  - <200 KB → `.png` in density-specific folders (`drawable-mdpi`, `drawable-hdpi`, etc.).  
+- **Fonts** → `res/font/`.  
+- **Raw files** → `res/raw/` (e.g., Lottie animations).  
+- **Values** → `res/values/` (colors, strings, dimensions).  
+  - **Colors must be defined in `colors.xml` (designer handoff).**  
+- **XML** → `res/xml/` (network configs, extraction rules).  
+
+---
+
+## ⚙️ Code Generation Rules (Implementation Standards)
+
+### 1. Image Handling
+- **Verify Source**: Check if the image is downloadable.  
+- **Mandatory Density Downloads**: Always generate and import all five versions (`mdpi`, `hdpi`, `xhdpi`, `xxhdpi`, `xxxhdpi`).  
+- **Placement**: Place each version in its correct `res/drawable-*` folder.  
+- **Failure Handling**:  
+  - Retry failed downloads once.  
+  - If still failing, scale the nearest available version.  
+  - Log a warning or notify the user.  
+  - Never proceed with only one image size.  
+
+---
+
+### 2. Composable Structure
+- Each composable must be separated into **3 sections**:
+  1. `Screen()` → Handles navigation.  
+  2. `Content()` → Displays top bar and bottom bar.  
+  3. `BodyContent()` → Contains the actual UI.  
+
+- **Architecture**:
+  - Strictly follow **MVI pattern**.  
+  - Use **ViewModels** for state management.  
+  - Define `UiState`, `UiEvent`, and `UiEffect` for each screen.  
+
+- **Reusability**:
+  - Identify reusable UI parts.  
+  - Place them in `user_interface/common/`.  
+  - If reused **3+ times**, move automatically to `common/`.  
+
+---
+
+### 3. Color Management (Updated with XML Requirement)
+- **Source of Truth**: All colors must be defined in `res/values/colors.xml` (designer-provided file).  
+- **Bridge**: `theme/Color.kt` must reference values from `colors.xml`.  
+- **Usage**:  
+  - Composables must use `MaterialTheme.colorScheme.*` or semantic wrappers from `Color.kt`.  
+  - No inline hex values or local color definitions allowed.  
+- **Example**:
+  ```xml
+  <!-- colors.xml -->
+  <color name="brandAccent">#fff1a325</color>
+  ```
+  ```kotlin
+  // Color.kt
+  val BrandAccent = Color(R.color.brandAccent)
+  ```
+  ```kotlin
+  // Usage in Composable
+  Text(
+      text = "Hello DriveHub",
+      color = MaterialTheme.colorScheme.primary
+  )
+  ```
+
+---
+
+### 4. Data Models
+- Data classes (models) must not be defined inside composable files.  
+- Place them in the `data/model/` folder, separated by file.  
+- Domain-specific models must reside in their respective submodule folders (e.g., `RegistrationModel.kt`).  
+
+---
+
+### 5. Domain Layer
+- Each submodule (e.g., Registration, Login, Dashboard) must contain:  
+  - `<Submodule>Model.kt`  
+  - `<Submodule>UseCase.kt`  
+
+---
+
+### 6. Navigation
+- `Screen.kt` must be placed directly inside `navigation/`.  
+- The `screen/` folder must be deleted.  
+
+---
+
+### 7. User Interface Layer
+- Each submodule (e.g., Registration, Login, Dashboard) must contain:  
+  - `<Submodule>Screen.kt`  
+  - `<Submodule>ViewModel.kt`  
+
+---
+
+### 8. Utility Layer
+- Must contain the following folders:  
+  - `extension/`  
+  - `function/`  
+  - `network/`  
+  - `storage/`  
+
+---
+
+## 🔗 Integration Clause
+- **Directory Rules** define *where* code and assets live.  
+- **Code Generation Rules** define *how* code should be written.  
+- In case of overlap:  
+  - Directory Rules take precedence for **file placement**.  
+  - Code Generation Rules take precedence for **implementation details**.  
+
+---

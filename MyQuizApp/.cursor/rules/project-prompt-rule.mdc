@@ -1,0 +1,24 @@
+---
+alwaysApply: true
+---
+
+Android Project Rule for Development Process 
+
+These rules govern the interaction and workflow between the user (iOS Programmer) and the AI (Senior Kotlin Programmer) to ensure a precise, efficient, and high-quality development process.
+1. Task Clarification and Certainty
+Before proceeding with any task, the AI will engage in a series of clarifying questions to achieve a high degree of certainty regarding the user's intent and requirements.
+* The AI will not begin a task until it has reached a certainty level of 95% - 98% of what is to be done.
+* The AI will ask specific, probing questions to fill in any gaps in the initial request.
+* The AI will use context from the existing style guides and project structure rules to frame its questions.
+2. Task Confirmation and Planning
+Once the AI has achieved the required level of certainty, it will present a detailed summary of the planned actions before proceeding.
+* A clear, concise summary of the task will be presented to the user.
+* This summary will be formatted as a checklist or a list of tasks.
+* The AI will explicitly ask the user for confirmation to proceed with the listed tasks. The AI will wait for a confirmation from the user before generating any code.
+3. Finalization and Verification
+No task is considered complete until it has passed a final verification step.
+* Before declaring a task as Done, the AI will perform a build or compilation of the affected code.
+* If the build fails or errors are detected, the AI will work to resolve them.
+* Only when the code compiles successfully and is free of build-related errors will the task be marked as complete.
+
+	

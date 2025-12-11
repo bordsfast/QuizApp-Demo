@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ==================== BRAND COLORS ==================== -->
+    <color name="brandAccent">#fff1a325</color>
+    <color name="brand50">#fff0f7ff</color>
+    <color name="brand100">#ffe1eefd</color>
+    <color name="brand200">#ffbcdcfb</color>
+    <color name="brand300">#ff81c1f8</color>
+    <color name="brand400">#ff3da2f3</color>
+    <color name="brand500">#ff1486e3</color>
+    <color name="brand600">#ff0768c2</color>
+    <color name="brand700">#ff07539d</color>
+    <color name="brand800">#ff0b4b88</color>
+    <color name="brand900">#ff0f3c6b</color>
+    <color name="brand950">#ff0a2747</color>
+
+    <!-- ==================== GREEN COLORS ==================== -->
+    <color name="green50">#fff0f5ef</color>
+    <color name="green100">#ffd0e6c9</color>
+    <color name="green200">#ffb8d9ad</color>
+    <color name="green300">#ff90c87e</color>
+    <color name="green400">#ff72aa5f</color>
+    <color name="green500">#ff459c13</color>
+    <color name="green600">#ff338700</color>
+    <color name="green700">#ff31770e</color>
+    <color name="green800">#ff205c00</color>
+    <color name="green900">#ff1e5403</color>
+    <color name="green950">#ff1a4d00</color>
+
+    <!-- ==================== BLUE COLORS ==================== -->
+    <color name="blue50">#ffeef2f9</color>
+    <color name="blue100">#ffd4e1f3</color>
+    <color name="blue200">#ffbdd4f7</color>
+    <color name="blue300">#ff9dbbe9</color>
+    <color name="blue400">#ff6c9ce5</color>
+    <color name="blue500">#ff528adf</color>
+    <color name="blue600">#ff1570eb</color>
+    <color name="blue700">#ff2065c7</color>
+    <color name="blue800">#ff21539c</color>
+    <color name="blue900">#ff1b4789</color>
+    <color name="blue950">#ff16407e</color>
+
+    <!-- ==================== RED COLORS ==================== -->
+    <color name="red50">#fff9edeb</color>
+    <color name="red100">#fff9d9d4</color>
+    <color name="red200">#fffbc3bc</color>
+    <color name="red300">#fff4a298</color>
+    <color name="red400">#ffe07f76</color>
+    <color name="red500">#ffe45d54</color>
+    <color name="red600">#ffd43e39</color>
+    <color name="red700">#ffba3935</color>
+    <color name="red800">#ffa12121</color>
+    <color name="red900">#ff8a2421</color>
+    <color name="red950">#ff7a211e</color>
+
+    <!-- ==================== YELLOW COLORS ==================== -->
+    <color name="yellow50">#fffffdeb</color>
+    <color name="yellow100">#fffef8c7</color>
+    <color name="yellow200">#fffdf18a</color>
+    <color name="yellow300">#fffce44d</color>
+    <color name="yellow400">#fffad325</color>
+    <color name="yellow500">#fff4b40c</color>
+    <color name="yellow600">#ffe89507</color>
+    <color name="yellow700">#ffb46309</color>
+    <color name="yellow800">#ff924d0e</color>
+    <color name="yellow900">#ff783f0f</color>
+    <color name="yellow950">#ff452003</color>
+
+    <!-- ==================== BLACK COLORS ==================== -->
+    <color name="black50">#ff101011</color>
+    <color name="black100">#ff131313</color>
+    <color name="black200">#ff171718</color>
+    <color name="black300">#ff1a1a1b</color>
+    <color name="black400">#ff1c1c1d</color>
+    <color name="black500">#ff232324</color>
+    <color name="black600">#ff2e2e2f</color>
+    <color name="black700">#ff373738</color>
+    <color name="black800">#ff3e3e3f</color>
+    <color name="black900">#ff444444</color>
+    <color name="black950">#ff474748</color>
+
+    <!-- ==================== WHITE COLORS ==================== -->
+    <color name="white50">#ffffffff</color>
+    <color name="white100">#fffdfdfe</color>
+    <color name="white200">#fff8f9fa</color>
+    <color name="white300">#ffeff1f4</color>
+    <color name="white400">#ffe3e6eb</color>
+    <color name="white500">#ffd5d9e0</color>
+    <color name="white600">#ffc3cad4</color>
+    <color name="white700">#ffb0b8c6</color>
+    <color name="white800">#ff9ba5b7</color>
+    <color name="white900">#ff8491a7</color>
+    <color name="white950">#ff6d7d96</color>
+
+    <!-- ==================== ALPHA COLORS ==================== -->
+    <color name="alpha80">#cc101011</color>
+    <color name="alpha60">#99101011</color>
+    <color name="alpha40">#66101011</color>
+    <color name="alpha20">#33101011</color>
+    <color name="alpha10">#1a101011</color>
+    <color name="alpha0">#00101011</color>
+
+    <!-- ==================== COMPONENT COLORS ==================== -->
+    <color name="componentsTableBgSelected">#ffeef2f9</color>
+    <color name="componentsInputBorder">#ffe3e6eb</color>
+    <color name="componentsInputSelectedFill">#ff1570eb</color>
+    <color name="componentsInputSelectedBorder">#ff1570eb</color>
+    <color name="componentsButtonSolidBgDefault">#ff07539d</color>
+    <color name="componentsButtonSolidBgHovered">#ff0b4b88</color>
+    <color name="componentsButtonSolidBgActive">#ff0f3c6b</color>
+    <color name="componentsButtonSolidFg">#ffffffff</color>
+    <color name="componentsButtonGhostBgDefault">#fff0f7ff</color>
+    <color name="componentsButtonGhostFg">#ff07539d</color>
+    <color name="componentsButtonGhostBgHovered">#ffe1eefd</color>
+    <color name="componentsButtonGhostBgActive">#ffbcdcfb</color>
+    <color name="componentsBadgeBgPrimarySolid">#ff07539d</color>
+    <color name="componentsBadgeBgPrimaryGhost">#fff0f7ff</color>
+    <color name="componentsBadgeFgPrimarySolid">#ffffffff</color>
+    <color name="componentsBadgeFgPrimaryGhost">#ff07539d</color>
+    <color name="componentsMenuSelectedBg">#ffeef2f9</color>
+    <color name="componentsMenuSelectedFg">#ff1570eb</color>
+    <color name="componentsTabBgPrimary">#fff0f7ff</color>
+    <color name="componentsTabFgPrimary">#ff07539d</color>
+    <color name="componentsContainerBorder">#ffe3e6eb</color>
+
+    <!-- ==================== BACKGROUND - BRAND SUBTLE ==================== -->
+    <color name="bgBrandSubtleDefault_light">#fff0f7ff</color>
+    <color name="bgBrandSubtleDefault_dark">#ffe1eefd</color>
+    <color name="bgBrandSubtleHovered_light">#ffe1eefd</color>
+    <color name="bgBrandSubtleHovered_dark">#ffbcdcfb</color>
+    <color name="bgBrandSubtleActive_light">#ffbcdcfb</color>
+    <color name="bgBrandSubtleActive_dark">#ff1486e3</color>
+
+    <!-- ==================== BACKGROUND - SURFACE ==================== -->
+    <color name="bgSurfaceSunken_light">#fff8f9fa</color>
+    <color name="bgSurfaceSunken_dark">#ff101011</color>
+    <color name="bgSurfaceDefault_light">#ffffffff</color>
+    <color name="bgSurfaceDefault_dark">#ff131313</color>
+    <color name="bgSurfaceRaised_light">#fffdfdfe</color>
+    <color name="bgSurfaceRaised_dark">#ff171718</color>
+    <color name="bgSurfaceOverlay_light">#fffdfdfe</color>
+    <color name="bgSurfaceOverlay_dark">#ff1c1c1d</color>
+
+    <!-- ==================== BACKGROUND - INTERFACE ==================== -->
+    <color name="bgInterfaceDefault_light">#fffdfdfe</color>
+    <color name="bgInterfaceDefault_dark">#ff171718</color>
+    <color name="bgInterfaceSubtle_light">#fff8f9fa</color>
+    <color name="bgInterfaceSubtle_dark">#ff2e2e2f</color>
+    <color name="bgInterfaceHovered_light">#fff8f9fa</color>
+    <color name="bgInterfaceHovered_dark">#ff1c1c1d</color>
+    <color name="bgInterfaceActive_light">#fffdfdfe</color>
+    <color name="bgInterfaceActive_dark">#ff1a1a1b</color>
+    <color name="bgInterfaceDisabled_light">#ffeff1f4</color>
+    <color name="bgInterfaceDisabled_dark">#ff232324</color>
+    <color name="bgInterfaceLight_light">#fffdfdfe</color>
+    <color name="bgInterfaceLight_dark">#fffdfdfe</color>
+    <color name="bgInterfaceOverlay_light">#66101011</color>
+    <color name="bgInterfaceOverlay_dark">#99101011</color>
+    <color name="bgInterfaceSelectedDefault_light">#ff1570eb</color>
+    <color name="bgInterfaceSelectedDefault_dark">#ff6c9ce5</color>
+    <color name="bgInterfaceSelectedSubtle_light">#ffeef2f9</color>
+    <color name="bgInterfaceSelectedSubtle_dark">#ffeef2f9</color>
+
+    <!-- ==================== BACKGROUND - INVERSE ==================== -->
+    <color name="bgInverseDefault_light">#ff232324</color>
+    <color name="bgInverseDefault_dark">#ffffffff</color>
+    <color name="bgInverseHovered_light">#ff2e2e2f</color>
+    <color name="bgInverseHovered_dark">#fffdfdfe</color>
+    <color name="bgInverseActive_light">#ff1c1c1d</color>
+    <color name="bgInverseActive_dark">#ffeff1f4</color>
+
+    <!-- ==================== BACKGROUND - INFO ==================== -->
+    <color name="bgInfoSubtleDefault_light">#ffeef2f9</color>
+    <color name="bgInfoSubtleDefault_dark">#ffeef2f9</color>
+    <color name="bgInfoSubtleHovered_light">#ffd4e1f3</color>
+    <color name="bgInfoSubtleHovered_dark">#ffbdd4f7</color>
+    <color name="bgInfoSubtleActive_light">#ffbdd4f7</color>
+    <color name="bgInfoSubtleActive_dark">#ff6c9ce5</color>
+    <color name="bgInfoDefault_light">#ff2065c7</color>
+    <color name="bgInfoDefault_dark">#ff2065c7</color>
+    <color name="bgInfoHovered_light">#ff21539c</color>
+    <color name="bgInfoHovered_dark">#ff21539c</color>
+    <color name="bgInfoActive_light">#ff1b4789</color>
+    <color name="bgInfoActive_dark">#ff1b4789</color>
+
+    <!-- ==================== BACKGROUND - BRAND ==================== -->
+    <color name="bgBrandDefault_light">#ff07539d</color>
+    <color name="bgBrandDefault_dark">#ff07539d</color>
+    <color name="bgBrandHovered_light">#ff0b4b88</color>
+    <color name="bgBrandHovered_dark">#ff0b4b88</color>
+    <color name="bgBrandActive_light">#ff0f3c6b</color>
+    <color name="bgBrandActive_dark">#ff0b4b88</color>
+
+    <!-- ==================== BACKGROUND - SUCCESS ==================== -->
+    <color name="bgSuccessDefault_light">#ff338700</color>
+    <color name="bgSuccessDefault_dark">#ff338700</color>
+    <color name="bgSuccessHovered_light">#ff31770e</color>
+    <color name="bgSuccessHovered_dark">#ff31770e</color>
+    <color name="bgSuccessActive_light">#ff205c00</color>
+    <color name="bgSuccessActive_dark">#ff205c00</color>
+    <color name="bgSuccessSubtleDefault_light">#fff0f5ef</color>
+    <color name="bgSuccessSubtleDefault_dark">#fff0f5ef</color>
+    <color name="bgSuccessSubtleHovered_light">#ffd0e6c9</color>
+    <color name="bgSuccessSubtleHovered_dark">#ffb8d9ad</color>
+    <color name="bgSuccessSubtleActive_light">#ffb8d9ad</color>
+    <color name="bgSuccessSubtleActive_dark">#ff459c13</color>
+
+    <!-- ==================== BACKGROUND - WARNING ==================== -->
+    <color name="bgWarningDefault_light">#ffe89507</color>
+    <color name="bgWarningDefault_dark">#ffe89507</color>
+    <color name="bgWarningHovered_light">#fff4b40c</color>
+    <color name="bgWarningHovered_dark">#fff4b40c</color>
+    <color name="bgWarningActive_light">#ffb46309</color>
+    <color name="bgWarningActive_dark">#ffb46309</color>
+    <color name="bgWarningSubtleDefault_light">#fffffdeb</color>
+    <color name="bgWarningSubtleDefault_dark">#fffffdeb</color>
+    <color name="bgWarningSubtleHovered_light">#fffef8c7</color>
+    <color name="bgWarningSubtleHovered_dark">#fffdf18a</color>
+    <color name="bgWarningSubtleActive_light">#fffdf18a</color>
+    <color name="bgWarningSubtleActive_dark">#fffad325</color>
+
+    <!-- ==================== BACKGROUND - DANGER ==================== -->
+    <color name="bgDangerDefault_light">#ffd43e39</color>
+    <color name="bgDangerDefault_dark">#ffba3935</color>
+    <color name="bgDangerHovered_light">#ffa12121</color>
+    <color name="bgDangerHovered_dark">#ffd43e39</color>
+    <color name="bgDangerActive_light">#ff8a2421</color>
+    <color name="bgDangerActive_dark">#ffba3935</color>
+    <color name="bgDangerSubtleDefault_light">#fff9edeb</color>
+    <color name="bgDangerSubtleDefault_dark">#fff9edeb</color>
+    <color name="bgDangerSubtleHovered_light">#fff9d9d4</color>
+    <color name="bgDangerSubtleHovered_dark">#fffbc3bc</color>
+    <color name="bgDangerSubtleActive_light">#fffbc3bc</color>
+    <color name="bgDangerSubtleActive_dark">#ffe45d54</color>
+
+    <!-- ==================== BACKGROUND - STATUS ==================== -->
+    <color name="bgStatusNeutral_light">#ffe3e6eb</color>
+    <color name="bgStatusNeutral_dark">#ffeff1f4</color>
+    <color name="bgStatusSuccess_light">#ff72aa5f</color>
+    <color name="bgStatusSuccess_dark">#ff459c13</color>
+    <color name="bgStatusWarning_light">#fffad325</color>
+    <color name="bgStatusWarning_dark">#fffad325</color>
+    <color name="bgStatusDanger_light">#ffd43e39</color>
+    <color name="bgStatusDanger_dark">#ffd43e39</color>
+
+    <!-- ==================== BACKGROUND - DECORATIVE ==================== -->
+    <color name="bgDecorativeAccent_light">#fff1a325</color>
+    <color name="bgDecorativeAccent_dark">#fff1a325</color>
+    <color name="bgDecorativeEmerald_light">#ff65a30d</color>
+    <color name="bgDecorativeEmerald_dark">#ff65a30d</color>
+    <color name="bgDecorativeSky_light">#ff3b82f6</color>
+    <color name="bgDecorativeSky_dark">#ff3b82f6</color>
+    <color name="bgDecorativeViolet_light">#ff8b5cf6</color>
+    <color name="bgDecorativeViolet_dark">#ff8b5cf6</color>
+    <color name="bgDecorativeAmber_light">#fff59e0b</color>
+    <color name="bgDecorativeAmber_dark">#fff59e0b</color>
+    <color name="bgDecorativePink_light">#ffd455d2</color>
+    <color name="bgDecorativePink_dark">#ffd455d2</color>
+
+    <!-- ==================== FOREGROUND ==================== -->
+    <color name="fgDefault_light">#ff3e3e3f</color>
+    <color name="fgDefault_dark">#ffffffff</color>
+    <color name="fgSubtle_light">#ff6d7d96</color>
+    <color name="fgSubtle_dark">#ffc3cad4</color>
+    <color name="fgInverse_light">#fff8f9fa</color>
+    <color name="fgInverse_dark">#ff2e2e2f</color>
+    <color name="fgDisabled_light">#ffb0b8c6</color>
+    <color name="fgDisabled_dark">#ff474748</color>
+    <color name="fgBrand_light">#ff07539d</color>
+    <color name="fgBrand_dark">#ff0768c2</color>
+    <color name="fgInfo_light">#ff2065c7</color>
+    <color name="fgInfo_dark">#ff528adf</color>
+    <color name="fgSuccess_light">#ff338700</color>
+    <color name="fgSuccess_dark">#ff459c13</color>
+    <color name="fgWarning_light">#ffe89507</color>
+    <color name="fgWarning_dark">#fff4b40c</color>
+    <color name="fgDanger_light">#ffba3935</color>
+    <color name="fgDanger_dark">#ffe45d54</color>
+    <color name="fgLight_light">#fffdfdfe</color>
+    <color name="fgLight_dark">#fffdfdfe</color>
+    <color name="fgDark_light">#ff2e2e2f</color>
+    <color name="fgDark_dark">#ff2e2e2f</color>
+    <color name="fgPlaceholder_light">#ff9ba5b7</color>
+    <color name="fgPlaceholder_dark">#ff444444</color>
+
+    <!-- ==================== FOREGROUND - ON SELECTED ==================== -->
+    <color name="fgOnselectedDefault_light">#ffffffff</color>
+    <color name="fgOnselectedDefault_dark">#ffffffff</color>
+    <color name="fgOnselectedSubtle_light">#ff1570eb</color>
+    <color name="fgOnselectedSubtle_dark">#ff6c9ce5</color>
+
+    <!-- ==================== FOREGROUND - ON INVERSE ==================== -->
+    <color name="fgOninverseDefault_light">#fffdfdfe</color>
+    <color name="fgOninverseDefault_dark">#ff232324</color>
+
+    <!-- ==================== FOREGROUND - ON BRAND ==================== -->
+    <color name="fgOnbrandDefault_light">#ffffffff</color>
+    <color name="fgOnbrandDefault_dark">#fff0f7ff</color>
+    <color name="fgOnbrandSubtle_light">#ff07539d</color>
+    <color name="fgOnbrandSubtle_dark">#ff0f3c6b</color>
+
+    <!-- ==================== FOREGROUND - ON INFO ==================== -->
+    <color name="fgOninfoDefault_light">#ffffffff</color>
+    <color name="fgOninfoDefault_dark">#ffffffff</color>
+    <color name="fgOninfoSubtle_light">#ff2065c7</color>
+    <color name="fgOninfoSubtle_dark">#ff2065c7</color>
+
+    <!-- ==================== FOREGROUND - ON SUCCESS ==================== -->
+    <color name="fgOnsuccessDefault_light">#ffffffff</color>
+    <color name="fgOnsuccessDefault_dark">#ffffffff</color>
+    <color name="fgOnsuccessSubtle_light">#ff31770e</color>
+    <color name="fgOnsuccessSubtle_dark">#ff31770e</color>
+
+    <!-- ==================== FOREGROUND - ON WARNING ==================== -->
+    <color name="fgOnwarningDefault_light">#ffffffff</color>
+    <color name="fgOnwarningDefault_dark">#ffffffff</color>
+    <color name="fgOnwarningSubtle_light">#ffb46309</color>
+    <color name="fgOnwarningSubtle_dark">#ff783f0f</color>
+
+    <!-- ==================== FOREGROUND - ON DANGER ==================== -->
+    <color name="fgOndangerDefault_light">#ffffffff</color>
+    <color name="fgOndangerDefault_dark">#ffffffff</color>
+    <color name="fgOndangerSubtle_light">#ffba3935</color>
+    <color name="fgOndangerSubtle_dark">#ffba3935</color>
+
+    <!-- ==================== FOREGROUND - ON ACCENT ==================== -->
+    <color name="fgOnaccentDefault_light">#ffffffff</color>
+    <color name="fgOnaccentDefault_dark">#fff0f7ff</color>
+    <color name="fgOnaccentSubtle_light">#fff1a325</color>
+    <color name="fgOnaccentSubtle_dark">#ff0f3c6b</color>
+
+    <!-- ==================== BORDER ==================== -->
+    <color name="borderDefault_light">#ffe3e6eb</color>
+    <color name="borderDefault_dark">#ff232324</color>
+    <color name="borderSubtle_light">#ffeff1f4</color>
+    <color name="borderSubtle_dark">#ff1a1a1b</color>
+    <color name="borderInverse_light">#ff1c1c1d</color>
+    <color name="borderInverse_dark">#ffffffff</color>
+    <color name="borderSelected_light">#ff1570eb</color>
+    <color name="borderSelected_dark">#ff3da2f3</color>
+    <color name="borderLight_light">#fffdfdfe</color>
+    <color name="borderLight_dark">#fffdfdfe</color>
+
+    <!-- ==================== BORDER - BRAND ==================== -->
+    <color name="borderBrandDefault_light">#ff0768c2</color>
+    <color name="borderBrandDefault_dark">#ff0768c2</color>
+    <color name="borderBrandSubtle_light">#ff3da2f3</color>
+    <color name="borderBrandSubtle_dark">#ff3da2f3</color>
+
+    <!-- ==================== BORDER - INFO ==================== -->
+    <color name="borderInfoDefault_light">#ff1570eb</color>
+    <color name="borderInfoDefault_dark">#ff528adf</color>
+    <color name="borderInfoSubtle_light">#ff6c9ce5</color>
+    <color name="borderInfoSubtle_dark">#ff1570eb</color>
+
+    <!-- ==================== BORDER - SUCCESS ==================== -->
+    <color name="borderSuccessDefault_light">#ff338700</color>
+    <color name="borderSuccessDefault_dark">#ff459c13</color>
+    <color name="borderSuccessSubtle_light">#ff72aa5f</color>
+    <color name="borderSuccessSubtle_dark">#ff338700</color>
+
+    <!-- ==================== BORDER - WARNING ==================== -->
+    <color name="borderWarningDefault_light">#fffdf18a</color>
+    <color name="borderWarningDefault_dark">#fffce44d</color>
+    <color name="borderWarningSubtle_light">#fffad325</color>
+    <color name="borderWarningSubtle_dark">#ffe89507</color>
+
+    <!-- ==================== BORDER - DANGER ==================== -->
+    <color name="borderDangerDefault_light">#ffe07f76</color>
+    <color name="borderDangerDefault_dark">#ffe45d54</color>
+    <color name="borderDangerSubtle_light">#ffe45d54</color>
+    <color name="borderDangerSubtle_dark">#ffe45d54</color>
+
+    <!-- ==================== RING ==================== -->
+    <color name="ringInterfaceFocus_light">#ff1570eb</color>
+    <color name="ringInterfaceFocus_dark">#ff1570eb</color>
+
+    <!-- ==================== SHADOW ==================== -->
+    <color name="shadowSurfaceRaised_light">#ffeff1f4</color>
+    <color name="shadowSurfaceRaised_dark">#ff101011</color>
+    <color name="shadowSurfaceOverlay_light">#ffc3cad4</color>
+    <color name="shadowSurfaceOverlay_dark">#ff131313</color>
+    <color name="shadowButtonHover_light">#1a101011</color>
+    <color name="shadowButtonHover_dark">#1a101011</color>
+</resources>
